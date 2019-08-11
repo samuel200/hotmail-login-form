@@ -71,11 +71,11 @@ div#form-holder input{
     border-bottom: 1px solid rgba(0,0,0,.6);
     transition: 1s border-bottom-color;
     padding: 10px 0px;
-    background: transparent;
+    background: white;
 }
 
 div#form-holder input:focus{
-    background: transparent;
+    background: white;
 }
 
 div#form-holder input::placeholder{
