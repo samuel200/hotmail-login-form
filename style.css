@@ -1,0 +1,257 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/outlook-background.jpg');
+    background-size: cover;
+    background-position-y: -95px;
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-content,
+.sign-up{
+    position: relative;
+    opacity: 0;
+    left: 50%;
+}
+
+#form-holder .sign-up{
+    position: absolute
+}
+
+div#form-holder{
+    width: 430px;
+    min-height: 320px;
+    background: white;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    color: rgba(0,0,0,.6);
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    overflow: hidden;
+    position: relative;
+}
+
+div#cover{
+    width: 100%;
+    min-height: inherit;
+    background: rgba(255, 255, 255, .65);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: none;
+    visibility: hidden;
+}
+
+div#cover img{
+    height: 5px;
+
+}
+
+div#form-holder > *{
+    display: inline-block;
+    margin: 0px;
+}
+
+div#form-holder input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,.6);
+    transition: 1s border-bottom-color;
+    padding: 10px 0px;
+    background: transparent;
+}
+
+div#form-holder input:focus{
+    background: transparent;
+}
+
+div#form-holder input::placeholder{
+    font-size: 1.05em;
+    font-weight: lighter;
+}
+
+div#form-holder input[type='password']{
+    font: inherit;
+}
+
+div#form-holder input:focus{
+    border-bottom-color: #0067b8;
+}
+div#form-holder > img{
+    width: 30%;
+    opacity: 0;
+}
+
+div#submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+div#form-holder button{
+    font: inherit;
+    background-color: #026ab9;
+    color: white;
+    border: none;
+    width: 30%;
+    padding: 5px 0px;
+
+}
+
+div#form-holder button:hover{
+    background-color: #00599c;
+}
+
+div#form-holder > p{
+    font-size: .8em;
+    color: #252525;
+}
+
+div#form-holder > p > a{
+    font: inherit;
+    color: #0067b8;
+}
+
+div#form-holder > p > a:hover{
+    color: #333333;
+}
+
+#back-icon{
+    padding: 8px 15px;
+    border-radius: 50%;
+    max-width: 25px;
+    color: black !important;
+    font-weight: 100;
+    background: transparent !important;
+    outline: none;
+}
+
+#back-icon:hover{
+    cursor: pointer;
+    background: rgb(229, 226, 226) !important;
+}
+
+#user-info{
+    font-size: 1.15em;
+}
+
+.sign-up img{
+    width: 20px;
+}
+
+#form-holder h2{
+    font-weight: 400;
+    color: #424242;
+}
+
+#form-holder p.error-message{
+    color: rgb(243, 74, 74);
+    font-size: 1em;
+    display: none
+}
+
+div#form-holder #keep-logged{
+    font-size: 1em;
+}
+
+div#form-holder #keep-logged > input{
+    transform: scale(1.5);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+main div.message{
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    font-size: .8em;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+}
+.hidden{
+    display: none;
+}
+
+main div.message p{
+    margin: 5px;
+}
+
+footer{
+    min-height: 40px;
+    max-height: 40px;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer button{
+    color: inherit;
+    /* font: inherit; */
+    background: transparent;
+    border: none;
+    font-weight: light;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    outline: none;
+}
+
+a{
+    color: inherit;
+    font-size: .75em;
+    display: inline-block;
+    margin-right: 18px;
+    text-decoration: none;
+    align-self: center;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 960px){
+    body{
+        background-position-y: 0px;
+        background-size: 100vw 100vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background: white;
+    }
+    main{
+        align-items: flex-start
+    }
+    footer{
+        background: white;
+        color: gray;
+        justify-content: flex-start;
+        padding-left: 25px;
+    }
+
+    div#form-holder{
+        width: 450px;
+        padding-top: 15px;
+    }
+}

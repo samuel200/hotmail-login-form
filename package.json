@@ -1,0 +1,19 @@
+{
+  "name": "hotmail",
+  "version": "1.0.0",
+  "description": "hotmail clone",
+  "main": "jquery.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuel200/hotmail-login-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuel200/hotmail-login-form/issues"
+  },
+  "homepage": "https://github.com/samuel200/hotmail-login-form#readme"
+}
